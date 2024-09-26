@@ -1,4 +1,4 @@
-# Products Task App
+# ProductsTaskApp
 
 This is a Flutter application that displays a list of products fetched from the Fake Store API.
 

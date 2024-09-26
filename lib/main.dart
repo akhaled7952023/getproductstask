@@ -9,7 +9,7 @@ import 'package:dio/dio.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 
 void main() {
-  // تهيئة الـ Dio و NetworkInfo و Repository هنا فقط
+
   final dio = Dio();
   final productDataSource = ProductRemoteDataSourceImpl(dio: dio);
   final networkInfo = NetworkInfoImpl(Connectivity());
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: BlocProvider(
         create: (context) => ProductCubit(productRepository)..fetchProducts(),
-        child: Products(),
+        child: const Products(),
       ),
     );
   }
